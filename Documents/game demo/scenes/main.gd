@@ -58,8 +58,8 @@ func _transition_to_main_menu() -> void:
 	## Load main menu scene
 	print("Transitioning to main menu...")
 	GameManager.current_state = GameManager.GameState.MENU
-	# TODO: Load main menu scene
-	# SceneManager.change_scene("res://scenes/ui/main_menu/main_menu.tscn")
+	# Load main menu asynchronously
+	SceneManager.change_scene("res://scenes/ui/main_menu.tscn", 0.0)
 
 # ============================================================================
 # SIGNAL HANDLERS
