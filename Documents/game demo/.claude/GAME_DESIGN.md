@@ -211,10 +211,57 @@ Each fish has:
 ### Mastery & Progression System
 - **Mastery Levels** - Track progress per fish species/genus
 - **Mastery Unlocks:**
-  - Better rods (faster reel speed, more forgiving timing windows)
+  - Rod upgrades (dual-path system - see below)
   - Special baits (increase spawn rate of specific fish)
   - New fishing locations/areas
   - Cosmetics and customization
+
+### Rod Upgrade System (Dual Path)
+
+#### **Path 1: Casual/Accessibility Rods**
+- **Focus:** Easier gameplay, forgiving mechanics
+- **Benefits:**
+  - Larger timing windows (±75ms instead of ±50ms for Perfect)
+  - Slower reel speed (more time to hit notes)
+  - More health per hit (easier to avoid fish escape)
+  - Lower skill floor = more accessible
+- **Score Impact:** Standard multipliers (no penalty, no bonus)
+- **Use Case:** Players wanting relaxing experience or learning rhythm patterns
+
+#### **Path 2: Hardcore/Mastery Rods**
+- **Focus:** Challenge + reward hardcore players
+- **Changes:**
+  - Smaller timing windows (±40ms for Perfect, ±80ms for Good)
+  - Faster reel speed (punishing if you miss timing)
+  - Less health per hit (one mistake costs more)
+  - Dangerous but skillful
+- **Score Impact:** Increased multiplier scaling
+  - Casual: 1x base multiplier
+  - Hardcore: 1.5x-2x base multiplier depending on rod tier
+  - Hardcore Perfect = 4x multiplier (vs 3x casual)
+- **Prestige Factor:** Leaderboard badge/title for hardcore rod clears
+- **Use Case:** Hardcore players seeking challenge and high scores
+
+#### **Rod Progression in Each Path**
+```
+Casual Path:                    Hardcore Path:
+1. Beginner Rod (baseline)      1. Beginner Rod (baseline)
+   ↓                               ↓
+2. Comfort Rod                  2. Challenge Rod
+   (large windows)                 (smaller windows, +1.5x mult)
+   ↓                               ↓
+3. Expert Comfort Rod           3. Master Rod
+   (huge forgiveness)              (tight windows, +1.75x mult)
+   ↓                               ↓
+4. Zen Master Rod               4. Legendary Rod
+   (ultimate chill)                (extreme difficulty, +2x mult)
+```
+
+#### **Player Choice**
+- Choice can be made in settings/gear selection before each level
+- Different leaderboards for casual vs hardcore (or separate leaderboard categories)
+- Players can master both paths if they want
+- Progression doesn't lock you into one path
 
 ### Area Progression System
 - **Area Tiers** - Multiple fishing locations unlock as you progress
@@ -374,6 +421,16 @@ These ideas have been integrated into the game design above. Check the sections 
 - Use Strudel for live coding music patterns
 - Export as audio tracks + beat map JSON
 - Genre and target fish genus metadata in beat maps
+
+### ✅ Dual-Path Rod Progression System
+**Status:** Planned
+**Details:** See "Rod Upgrade System (Dual Path)" section
+- **Casual Path:** Forgiving timing windows, more health, lower skill floor
+- **Hardcore Path:** Tighter windows, faster reel, higher score multipliers (1.5x-2x)
+- Players choose path before each level
+- Separate progression tracks but both unlock through mastery
+- Prestige badges for hardcore clears
+- Enables accessibility without compromising hardcore appeal
 
 ---
 
