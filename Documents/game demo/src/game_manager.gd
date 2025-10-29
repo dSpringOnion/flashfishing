@@ -22,11 +22,15 @@ enum GameState {
 # MEMBER VARIABLES
 # ============================================================================
 
-var current_state: GameState = GameState.MENU:
+var _current_state: GameState = GameState.MENU
+
+var current_state: GameState:
+	get:
+		return _current_state
 	set(value):
-		if value != current_state:
-			_on_state_transition(current_state, value)
-			current_state = value
+		if value != _current_state:
+			_on_state_transition(_current_state, value)
+			_current_state = value
 			state_changed.emit(value)
 
 var current_area: String = "area_1"  # Fishing location

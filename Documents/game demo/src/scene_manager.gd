@@ -57,8 +57,18 @@ func change_scene(scene_path: String, transition_duration_override: float = -1.0
 	# Fade out current scene
 	await _fade_out(duration)
 
-	# Load and set new scene
-	var new_scene = load(scene_path).instantiate()
+	# Load scene with error checking
+	var loaded_resource = load(scene_path)
+	if loaded_resource == null:
+		push_error("Failed to load scene: %s" % scene_path)
+		return
+
+	# Instantiate scene with error checking
+	var new_scene = loaded_resource.instantiate()
+	if new_scene == null:
+		push_error("Failed to instantiate scene: %s" % scene_path)
+		return
+
 	var root = get_tree().root
 
 	# Remove old scene
@@ -98,7 +108,16 @@ func go_back() -> void:
 
 func push_overlay(overlay_scene_path: String) -> void:
 	## Add an overlay scene on top of current scene (e.g., pause menu)
-	var overlay = load(overlay_scene_path).instantiate()
+	var loaded_resource = load(overlay_scene_path)
+	if loaded_resource == null:
+		push_error("Failed to load overlay scene: %s" % overlay_scene_path)
+		return
+
+	var overlay = loaded_resource.instantiate()
+	if overlay == null:
+		push_error("Failed to instantiate overlay scene: %s" % overlay_scene_path)
+		return
+
 	scene_stack.append(overlay_scene_path)
 	get_tree().root.add_child(overlay)
 	print("Overlay pushed: %s" % overlay_scene_path)
@@ -123,7 +142,11 @@ func pop_overlay() -> void:
 
 func preload_scene(scene_path: String) -> Resource:
 	## Preload a scene for faster loading later
-	var scene = preload(scene_path)
+	## Note: Using load() instead of preload() because preload() only accepts literals
+	var scene = load(scene_path)
+	if scene == null:
+		push_error("Failed to preload scene: %s" % scene_path)
+		return null
 	print("Scene preloaded: %s" % scene_path)
 	return scene
 

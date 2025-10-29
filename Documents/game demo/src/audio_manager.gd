@@ -74,7 +74,12 @@ func play_music(music_name: String, loop: bool = true) -> void:
 
 	var audio_stream = load(music_path)
 	if audio_stream == null:
-		print("ERROR: Could not load music: %s" % music_path)
+		push_error("Could not load music: %s" % music_path)
+		return
+
+	# Validate it's an audio stream
+	if not audio_stream is AudioStream:
+		push_error("Loaded resource is not an AudioStream: %s" % music_path)
 		return
 
 	music_player.stream = audio_stream
@@ -117,7 +122,12 @@ func play_sfx(sfx_name: String, volume_db: float = 0.0) -> void:
 
 	var audio_stream = load(sfx_path)
 	if audio_stream == null:
-		print("ERROR: Could not load SFX: %s" % sfx_path)
+		push_error("Could not load SFX: %s" % sfx_path)
+		return
+
+	# Validate it's an audio stream
+	if not audio_stream is AudioStream:
+		push_error("Loaded resource is not an AudioStream: %s" % sfx_path)
 		return
 
 	sfx_player.stream = audio_stream
