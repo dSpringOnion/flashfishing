@@ -434,6 +434,222 @@ These ideas have been integrated into the game design above. Check the sections 
 
 ---
 
+---
+
+## Story & World Setting
+
+### Game Narrative
+You're a seasoned angler discovering a magical fishing expedition across diverse ecosystems. Each location holds unique fish species, each with their own personality, difficulty level, and music personality. Master the rhythm of nature to catch them all.
+
+### Visual Themes & Progression Flow
+```
+BEGINNER JOURNEY:
+Calm Creek → Peaceful River → Coastal Bay → Deep Ocean
+
+Visual Progression:
+Pastel/Serene → Warm/Golden → Dynamic/Colorful → Dark/Mysterious
+```
+
+---
+
+## Fishing Areas & Ecosystems
+
+### Area 1: Calm Creek (Beginner)
+**Setting:** Peaceful freshwater stream in spring/summer
+**Visual Aesthetic:** Soft pastels, gentle water, wildflowers, warm sunlight
+**Music Vibe:** Acoustic guitar, lo-fi, ambient sounds
+**Difficulty:** 1-2 stars
+
+#### Fish Genus: **Perch** (Percidae Family)
+Calm, deliberate movements. Players learn basic mechanics here.
+
+**Tier 1 Species:**
+- **Yellow Perch** (*Perca flavescens*)
+  - Size: Small (4-8 inches)
+  - Rarity: Very Common
+  - Pattern: Simple circles (taps), acoustic folk rhythm
+  - Visual: Golden-yellow with green stripes
+  - Spawn probability: Base 100%
+  - Behavior: Curious, easy to catch
+
+**Tier 2 Species:**
+- **White Perch** (*Morone americana*)
+  - Size: Medium (6-10 inches)
+  - Rarity: Common
+  - Pattern: Mix of circles + hold notes, fingerpicking acoustic
+  - Visual: Silver body with darker stripes
+  - Spawn probability: 60% (unlock after catching 5 Yellow Perch)
+  - Behavior: More cautious than Yellow Perch
+
+**Tier 3 Species:**
+- **Black Crappie** (*Pomoxis nigromaculatus*) [Sunfish family]
+  - Size: Medium-Large (8-12 inches)
+  - Rarity: Uncommon
+  - Pattern: Circles + holds + short streams, classical acoustic arrangements
+  - Visual: Dark with mottled patterns, distinctive shape
+  - Spawn probability: 30% (unlock after mastery level 2)
+  - Behavior: Crafty, requires precision
+
+---
+
+### Area 2: Golden River (Intermediate)
+**Setting:** Flowing river during golden hour (dawn/dusk)
+**Visual Aesthetic:** Warm golds, amber lighting, rustling reeds, dynamic water flow
+**Music Vibe:** Jazz, blues, syncopated rhythms, upright bass
+**Difficulty:** 3-4 stars
+
+#### Fish Genus: **Salmon** (Salmonidae Family)
+Determined, powerful movements. Players learn complex patterns.
+
+**Tier 2 Species:**
+- **Atlantic Salmon** (*Salmo salar*)
+  - Size: Large (20-30 inches)
+  - Rarity: Uncommon
+  - Pattern: Circles + holds + sliders, smooth jazz melodies
+  - Visual: Silvery with brown spots, powerful frame
+  - Spawn probability: 40% (unlock by reaching Area 2)
+  - Behavior: Strong fighter, requires stamina
+
+**Tier 3 Species:**
+- **Chinook/King Salmon** (*Oncorhynchus tshawytscha*)
+  - Size: Very Large (36-50+ inches)
+  - Rarity: Rare
+  - Pattern: Complex sliders + streams, bebop jazz complexity
+  - Visual: Dark greenish-brown, massive, intimidating
+  - Spawn probability: 20% (high accuracy = higher chance for legendary variant)
+  - Behavior: Legendary strength, most challenging in this area
+
+**Tier 4 Species:**
+- **Coho Salmon** (*Oncorhynchus kisutch*)
+  - Size: Large (24-36 inches)
+  - Rarity: Uncommon-Rare
+  - Pattern: Balanced circles/holds/sliders, swinging jazz rhythms
+  - Visual: Silver with dark back, distinctive black gums
+  - Spawn probability: 35% (unlock after Mastery level 2)
+  - Behavior: Acrobatic, flashy movements
+
+---
+
+### Area 3: Coastal Bay (Advanced)
+**Setting:** Estuary where river meets ocean, salt/fresh water mixing
+**Visual Aesthetic:** Dynamic blues, crashing waves, seagulls, reef rocks
+**Music Vibe:** Drum & Bass, Breakbeats, High-energy electronic
+**Difficulty:** 4-5 stars
+
+#### Fish Genus: **Drum** (Sciaenidae Family)
+Explosive, energetic movements. Players face intense rhythm challenges.
+
+**Tier 3 Species:**
+- **Freshwater Drum** (*Aplodinotus grunniens*)
+  - Size: Medium-Large (12-18 inches)
+  - Rarity: Uncommon
+  - Pattern: Rapid streams, early drum & bass (120 BPM)
+  - Visual: Silvery-brown with hard head, distinctive appearance
+  - Spawn probability: 50% (unlock by reaching Area 3)
+  - Behavior: Quick, responsive, tests speed
+
+**Tier 4 Species:**
+- **Red Drum/Redfish** (*Sciaenops ocellatus*)
+  - Size: Very Large (24-40+ inches)
+  - Rarity: Rare
+  - Pattern: Complex streams + sliders, liquid drum & bass (170 BPM)
+  - Visual: Copper-bronze color, distinctive black spot(s) near tail
+  - Spawn probability: 25% (high mastery = legendary variant chance)
+  - Behavior: Powerful, aggressive, high-stakes
+
+**Tier 4 Species:**
+- **Black Drum** (*Pogonias cromis*)
+  - Size: Massive (30-50+ inches)
+  - Rarity: Very Rare
+  - Pattern: Extreme streams + complex sliders, breakcore (200+ BPM)
+  - Visual: Dark gray-black, massive, prehistoric looking
+  - Spawn probability: 10% (legendary fish, requires mastery + high accuracy)
+  - Behavior: Ultimate challenge, rewards 3x multiplier on hardcore rods
+
+---
+
+### Area 4: Deep Ocean (Expert/Legendary)
+**Setting:** Open ocean, deep waters, bioluminescent creatures
+**Visual Aesthetic:** Deep blues/purples, mysterious glows, otherworldly
+**Music Vibe:** Orchestral, Experimental, Ambient Hyperpop fusion
+**Difficulty:** 5 stars
+
+#### Fish Genus: **Predators** (Mixed families, Legendary status)
+Mythical, pattern-breaking movements. Only for masters.
+
+**Tier 5 Species (Legendary):**
+- **Swordfish** (*Xiphias gladius*)
+  - Size: Legendary (60-72+ inches)
+  - Rarity: Extremely Rare (only 5% spawn chance)
+  - Pattern: Chaotic sliders + reverse notes, orchestral ambience + glitch
+  - Visual: Massive, dark, iconic sword-like bill
+  - Spawn probability: 5% (requires mastery level 3+ on all Area 3 fish)
+  - Behavior: Unpredictable, demands perfect accuracy
+
+- **Phantom Pike** (Fantasy species)
+  - Size: Mysterious
+  - Rarity: Mythical (1% spawn chance)
+  - Pattern: Random pattern mixing all mechanics, avant-garde experimental
+  - Visual: Ethereal, glowing, genre-defying
+  - Spawn probability: 1% (Easter egg, pure RNG luck)
+  - Behavior: Reality-bending, for bragging rights
+
+---
+
+## Fish Database Technical Reference
+
+```
+Fish Structure:
+{
+  "id": "yellow_perch_01",
+  "common_name": "Yellow Perch",
+  "scientific_name": "Perca flavescens",
+  "genus": "Perch",
+  "tier": 1,
+  "area": "Calm Creek",
+  "size_inches": [4, 8],
+  "color": "Golden-yellow with green stripes",
+  "rarity": "Very Common",
+  "spawn_chance": 100,
+  "unlock_condition": "None",
+  "music_genre": "Acoustic Folk",
+  "pattern_type": ["circle"],
+  "pattern_difficulty": 1,
+  "bpm_range": [90, 110],
+  "base_points": 100,
+  "size_variant_multiplier": 1.0,
+  "mastery_reward": 5
+}
+```
+
+---
+
+## Area Progression Gates
+
+```
+Area 1: Calm Creek
+├── Unlock: Game start
+├── Min mastery to progress: 5 total points
+└── Storyline: "Learn the basics in peaceful waters"
+
+Area 2: Golden River
+├── Unlock: Complete Area 1, catch 10+ Perch genus fish
+├── Min mastery to progress: 30 total points OR 10 points in Perch genus
+└── Storyline: "Follow the river upstream to discover stronger fish"
+
+Area 3: Coastal Bay
+├── Unlock: Complete Area 2, reach mastery level 2 in any fish
+├── Min mastery to progress: 60 total points OR 20 points in Salmon genus
+└── Storyline: "The ocean calls with its rhythmic energy"
+
+Area 4: Deep Ocean
+├── Unlock: Complete Area 3, reach mastery level 3 in Drum genus
+├── Min mastery to progress: 100+ total points
+└── Storyline: "Beyond all known waters, legends await"
+```
+
+---
+
 ## Feature Ideas & Brainstorming
 
 **Just write your ideas here!** No formatting needed. I'll read them and figure out how to implement them.
