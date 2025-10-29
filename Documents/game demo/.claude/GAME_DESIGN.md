@@ -293,57 +293,14 @@ Input Mapping:
 
 ## Feature Ideas & Brainstorming
 
-Add your feature ideas here as you think of them. Use the format below and I'll brainstorm implementation approaches!
+**Just write your ideas here!** No formatting needed. I'll read them and figure out how to implement them.
 
-### Feature Idea Template
-```
-## Feature: [Name]
-**Status:** Idea / In Progress / Implemented / Backlog
+### Quick Ideas / Brain Dump
+-for progression, better scores give better chance for yield( ie perfect scores have the highest chance of giving the largest/ rarest verison of the fish, but not garunteed) with better fish and scores players can unlock mastery. Mastery allows for better rods and baits and locations, letting players encounter more variety of fish and more challenging fish.
+-area progression unlocks harder fish(in the new area) newer fish can introduce more mechanics while fishing, ie first tier fish only have taps, second tier fish have holds, etc etc. 
+-
 
-**Description:**
-[What is this feature? What does it do?]
-
-**How it works:**
-[Mechanics and user flow]
-
-**Priority:** High / Medium / Low
-
-**Notes/Questions:**
-[Any additional thoughts or questions about implementation]
-```
-
-### Example Ideas (delete and replace with your own):
-
-## Feature: Daily Challenges
-**Status:** Idea
-
-**Description:**
-Special daily fishing challenges with unique constraints and rewards
-
-**How it works:**
-- Each day gets a new challenge (e.g., "catch 5 bass without missing")
-- Special reward multiplier for completing daily
-- Tracks streak of consecutive days completed
-
-**Priority:** Medium
-
-**Notes:**
-Maybe add visual badge on menu for completing daily?
-
----
-
-## Feature: Leaderboards
-**Status:** Idea
-
-**Description:**
-Global or local leaderboards tracking high scores
-
-**How it works:**
-- Score-based ranking for each song
-- Local leaderboard (saved to device)
-- Optional cloud sync for global rankings
-
-**Priority:** Medium
-
-**Notes:**
-Could be motivating for replayability
+### Ideas Worth Exploring
+-
+-
+-
