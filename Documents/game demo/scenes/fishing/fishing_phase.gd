@@ -125,8 +125,7 @@ func _transition_to_rhythm_minigame() -> void:
 	## Switch to rhythm minigame
 	print("Transitioning to rhythm minigame...")
 	GameManager.current_state = GameManager.GameState.RHYTHM
-	# TODO: Load rhythm minigame scene when ready
-	# SceneManager.change_scene("res://scenes/rhythm/rhythm_minigame.tscn")
+	SceneManager.change_scene("res://scenes/rhythm/rhythm_minigame.tscn")
 
 func _on_time_expired() -> void:
 	## Time ran out - level failed
