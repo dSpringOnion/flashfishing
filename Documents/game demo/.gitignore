@@ -1,0 +1,15 @@
+# Godot-specific ignores
+.godot/
+*.import
+*.exported_variables.cfg
+export.cfg
+export_presets.cfg
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+Thumbs.db
