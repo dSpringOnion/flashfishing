@@ -173,25 +173,60 @@ Fish Escape Mechanic:
 - Each song has 3-5 fishing "rounds"
 - Difficulty unlocks based on performance
 
-### Fish Variety
+### Fish Variety & Genus System
 ```
-Fish Database:
-- Bass (common, easy patterns)
-- Trout (medium, moderate patterns)
-- Salmon (hard, complex patterns)
-- Legendary Fish (rare, extreme patterns)
+Fish Database organized by Genus & Tier:
+
+Perch Genus (Acoustic vibe):
+- Perch (Tier 1) - Simple taps, calm rhythms
+- Golden Perch (Tier 2) - Adds hold notes
+- Nile Perch (Tier 3) - Complex patterns
+
+Salmon Genus (Jazz vibe):
+- Atlantic Salmon (Tier 2) - Moderate complexity
+- Chinook Salmon (Tier 3) - Syncopated patterns
+- King Salmon (Tier 4) - Advanced jazz rhythms
+
+Drum Genus (Drum & Bass vibe):
+- Red Drum (Tier 3) - Fast streams, high energy
+- Black Drum (Tier 4) - Extreme complexity, sliders
 
 Each fish has:
-- Spawn probability
-- Rhythm pattern set
+- Spawn probability (base, boosted by mastery/area)
+- Rhythm pattern set (synced to genre music)
 - Point value
 - Visual design
+- Size variants (small, medium, large, legendary)
+- Unlock conditions (area/tier progression)
 ```
 
-### Upgrade System (Future)
-- Better rods (faster reel speed)
-- Special bait (attract rarer fish)
-- Line strength (more forgiving windows)
+### Size Variants & Rarity System
+- **Score-based Yield** - Higher accuracy = higher chance for larger/rarer variants
+  - Perfect accuracy (95%+) = 50% chance for legendary variant
+  - Good accuracy (80-95%) = 25% chance for large variant
+  - Normal accuracy (<80%) = standard/small variants guaranteed
+- Each catch is NOT guaranteed but probability scales with performance
+- Larger fish = better points and mastery progression
+
+### Mastery & Progression System
+- **Mastery Levels** - Track progress per fish species/genus
+- **Mastery Unlocks:**
+  - Better rods (faster reel speed, more forgiving timing windows)
+  - Special baits (increase spawn rate of specific fish)
+  - New fishing locations/areas
+  - Cosmetics and customization
+
+### Area Progression System
+- **Area Tiers** - Multiple fishing locations unlock as you progress
+- **Progression Gates:**
+  - Area 1: Unlock with any fish caught
+  - Area 2: Unlock with 50 mastery points across all fish
+  - Area 3: Unlock with specific fish mastery (e.g., catch rare variants)
+- **Each Area Introduces:**
+  - New fish genus with new mechanics
+  - Higher difficulty patterns
+  - New music genre/aesthetic
+  - Themed visual environment
 
 ---
 
@@ -202,14 +237,19 @@ Each fish has:
 - Offset calibration (for latency)
 - Note timings baked into song data files
 
-### Song Format
+### Song Format & Music Composition
+- **Music Framework:** Strudel (live coding music environment)
+- **Workflow:** Create music patterns in Strudel → Export as tracks + beat maps
+- **Beat Map Format:**
 ```json
 {
   "title": "Song Name",
   "artist": "Artist Name",
   "bpm": 120,
+  "genre": "acoustic|jazz|dnb",
   "difficulty": 1-5,
   "offset_ms": 0,
+  "target_fish_genus": ["Perch", "Salmon"],
   "notes": [
     {
       "time_ms": 1000,
@@ -220,6 +260,10 @@ Each fish has:
   ]
 }
 ```
+- **Genre Mapping:** Fish genus tied to music genre for thematic coherence
+  - Perch → Acoustic (calm, mellow)
+  - Salmon → Jazz (syncopated, complex)
+  - Drum → Drum & Bass (fast, energetic)
 
 ### Performance Targets
 - 60 FPS stable
@@ -291,13 +335,55 @@ Input Mapping:
 
 ---
 
+---
+
+## Planned Features (from Brainstorming)
+
+These ideas have been integrated into the game design above. Check the sections they're referenced in:
+
+### ✅ Score-based Yield & Rarity System
+**Status:** Planned
+**Details:** See "Size Variants & Rarity System" section
+- Higher accuracy = higher chance for larger/rarer fish variants
+- Probability-based (not guaranteed) for a satisfying progression curve
+- Incentivizes skill improvement
+
+### ✅ Mastery & Progression System
+**Status:** Planned
+**Details:** See "Mastery & Progression System" section
+- Track progress per fish species
+- Unlocks: better rods, special baits, new areas, cosmetics
+
+### ✅ Area Progression with Mechanic Introduction
+**Status:** Planned
+**Details:** See "Area Progression System" section
+- Each area unlocks new fish genus with new mechanics
+- Tier 1: Circles (taps) → Tier 2: Holds → Tier 3: Sliders → Tier 4: Streams
+- Natural difficulty curve for players to learn
+
+### ✅ Fish Genus System with Genre Mapping
+**Status:** Planned
+**Details:** See "Fish Variety & Genus System" section
+- Each genus tied to music genre (Perch=Acoustic, Salmon=Jazz, Drum=Drum&Bass)
+- Same genus shares similar beat maps for recognition/collection appeal
+- Higher tier species introduce genre-appropriate mechanic complexity
+
+### ✅ Strudel-based Music Composition
+**Status:** Planned
+**Details:** See "Song Format & Music Composition" section
+- Use Strudel for live coding music patterns
+- Export as audio tracks + beat map JSON
+- Genre and target fish genus metadata in beat maps
+
+---
+
 ## Feature Ideas & Brainstorming
 
 **Just write your ideas here!** No formatting needed. I'll read them and figure out how to implement them.
 
 ### Quick Ideas / Brain Dump
--for progression, better scores give better chance for yield( ie perfect scores have the highest chance of giving the largest/ rarest verison of the fish, but not garunteed) with better fish and scores players can unlock mastery. Mastery allows for better rods and baits and locations, letting players encounter more variety of fish and more challenging fish.
--area progression unlocks harder fish(in the new area) newer fish can introduce more mechanics while fishing, ie first tier fish only have taps, second tier fish have holds, etc etc. 
+-
+-
 -
 
 ### Ideas Worth Exploring
